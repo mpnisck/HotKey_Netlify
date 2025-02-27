@@ -1,42 +1,160 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@font-face {
+  font-family: 'EliceDigitalBaeum_Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  background: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  font-family: 'EliceDigitalBaeum_Bold';
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position:relative;
 }
-
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  width: 12%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.typeJsWrapper {
+  width: 1200px; height: auto;
+  position: relative;
+  z-index: 9;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.typeJsWrapper .typeJsText {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
 }
+.typeJsText {
+  width: 100%; height: 100px;
+}
+.buttonWrapper {
+  width: 100%; height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.buttonWrapper a {
+  position: relative;
+  z-index: 9;
+  display: block;
+  width: 35%; height: 47px;
+  line-height: 47px;
+  background: #FF8C00;
+  border: 3px solid transparent;
+  box-shadow: 0 0 10px #0002;
+  border-radius: 100px;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  color: #333;
+  transition: all .3s;
+}
+.buttonWrapper a:hover {
+  background: #333;
+  color: #FF8C00;
+  letter-spacing: 1px;
+}
+.buttonWrapper a:hover .guide { background: #fff; color: #FF8C00; }
+.guide {
+  position: absolute;
+  right: 10px; top: 50%;
+  transform: translateY(-50%);
+  width: 50px; height: 50px;
+  border-radius: 100px;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  transition: all .3s;
+}
+.guide:hover { background:#FF8C00; }
+.popup {
+  position: absolute;
+  left:50%; bottom: 120%;
+  transform: translateX(-50%);
+  z-index: 99;
+  width:fit-content; height:fit-content;
+  border-radius:20px;
+  background:#333;
+  padding:2rem;
+  color:#fff;
+  text-align:left;
+  display: none;
+  transition: all .3s;
+}
+.buttonWrapper:hover .popup {
+  display: block;
+}
+.popup .iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+.popup h3 {
+  font-size:2rem;
+  padding:0;
+  line-height: 0;
+}
+.popup em {
+  display: block;
+  font-size: 0.9rem;
+  color:#f6f6f6;
+  padding-bottom:1rem;
+}
+.popup ul {
+  list-style: none;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  gap: 0 15px;
+  padding: 0;
+  margin: 0;
+}
+.popup ul li:nth-child(odd) {
+  display: inline-block;
+  width: 30px; height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #f6f6f6;
+  color:#333;
+  border-radius: 100px;;
+}
+.popup ul li p b { color:#FF8C00; }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width:1200px) {
+ .typeJsWrapper {
+  width: 100%;
+  margin: 0 auto;
+ }
+ .logo { width:50%; }
+ .typeJsWrapper { width:55%; }
+ .typeJsWrapper .typeJsText {
+    font-size: 2rem;
+    line-height: 1.4;
   }
-  to {
-    transform: rotate(360deg);
+ .card a {
+    width:50%;
+    height:40px;
+    line-height:40px;
+    font-size:1.3rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media all and (max-width:768px) {
+  .typeJsWrapper { width:50%; }
+  .typeJsWrapper .typeJsText { font-size: 1.6rem; }
+}
+
+@media all and (max-width:500px) {
+  .buttonWrapper a { width: 60%; }
+  .card a {
+    height:30px;
+    line-height:30px;
+    font-size:1.2rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

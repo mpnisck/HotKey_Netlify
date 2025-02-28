@@ -34,8 +34,6 @@ function App() {
   }, [isTyping, counter, textToType]);
 
   const handleDownload = () => {
-    window.open("https://github.com/mpnisck/HotKey/releases/download/hotkey/HotKey-1.0.0-arm64-mac.zip", "_blank");
-
     const copyText = "xattr -c /Applications/[...directory]/HotKey-1.0.0-arm64-mac.zip";
     navigator.clipboard.writeText(copyText).then(() => {
       setShowAlert(true);

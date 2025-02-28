@@ -1,4 +1,4 @@
-import daisyui from "daisyui";
+import daisyui from "daisyui.js";
 
 export default {
   plugins: [

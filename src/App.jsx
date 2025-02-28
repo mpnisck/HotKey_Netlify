@@ -47,7 +47,7 @@ function App() {
   return (
     <>
       <div className="typeJsWrapper">
-        <img src="src/assets/hotkey.png" alt="hotkey_logo" className="logo" />
+        <img alt="hotkey_logo" class="logo" src="/hotkey.png" />
         <h1 className="typeJsText">{displayText}</h1>
       </div>
       <div className="buttonWrapper">

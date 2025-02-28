@@ -157,8 +157,8 @@ body {
   width: 100%;
   margin: 0 auto;
  }
- .logo { width:50%; }
- .typeJsWrapper { width:55%; }
+ .logo { width:20%; }
+ .typeJsWrapper { width:800px; }
  .typeJsWrapper .typeJsText {
     font-size: 2rem;
     line-height: 1.4;
@@ -172,11 +172,15 @@ body {
 }
 
 @media all and (max-width:768px) {
-  .typeJsWrapper { width:50%; }
+  .buttonWrapper a { width:45%; }
+  .typeJsWrapper { width:700px; }
   .typeJsWrapper .typeJsText { font-size: 1.6rem; }
+  .logo { width:20%; }
+  .popup h3 { font-size:1.4rem; }
 }
 
 @media all and (max-width:500px) {
+  .typeJsWrapper { width:490px; }
   .buttonWrapper a { width: 60%; }
   .card a {
     height:30px;

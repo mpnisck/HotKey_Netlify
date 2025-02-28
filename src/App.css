@@ -1,12 +1,14 @@
 @font-face {
   font-family: "EliceDigitalBaeum_Bold";
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-style: normal;
 }
 body {
@@ -20,13 +22,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  position:relative;
+  position: relative;
 }
 .logo {
   width: 12%;
 }
 .typeJsWrapper {
-  width: 1200px; height: auto;
+  width: 1200px;
+  height: auto;
   position: relative;
   z-index: 9;
 }
@@ -36,17 +39,19 @@ body {
   color: #333;
 }
 .typeJsText {
-  width: 100%; height: 100px;
+  width: 100%;
+  height: 100px;
   position: relative;
 }
 .typeJsText::after {
-  content: '|';
+  content: "|";
   display: inline-block;
   margin-left: 2px;
   animation: blink 0.7s infinite;
 }
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -54,7 +59,8 @@ body {
   }
 }
 .buttonWrapper {
-  width: 100%; height: auto;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,53 +70,62 @@ body {
   position: relative;
   z-index: 9;
   display: block;
-  width: 35%; height: 47px;
+  width: 35%;
+  height: 47px;
   line-height: 47px;
-  background: #FF8C00;
+  background: #ff8c00;
   border: 3px solid transparent;
   box-shadow: 0 0 10px #0002;
   border-radius: 100px;
   padding: 10px 30px;
   font-size: 1.5rem;
   color: #333;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.buttonWrapper a button { background:#333; }
+.buttonWrapper a button {
+  background: #333;
+}
 .buttonWrapper a:hover {
   background: #333;
-  color: #FF8C00;
+  color: #ff8c00;
   letter-spacing: 1px;
 }
 .buttonWrapper a:hover .guide {
   background: #fff;
-  color: #FF8C00;
+  color: #ff8c00;
 }
 .guide {
   position: absolute;
-  right: 10px; top: 50%;
+  right: 10px;
+  top: 50%;
   transform: translateY(-50%);
-  width: 50px; height: 50px;
+  width: 50px;
+  height: 50px;
   border-radius: 100px;
   border: none;
   font-size: 1rem;
   color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.guide:hover { background:#FF8C00; }
+.guide:hover {
+  background: #ff8c00;
+}
 .popup {
   position: absolute;
-  left:50%; bottom: 120%;
+  left: 50%;
+  bottom: 120%;
   transform: translateX(-50%);
   z-index: 99;
-  width:fit-content; height:fit-content;
-  border-radius:20px;
-  background:#333;
-  padding:2rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  background: #333;
+  padding: 2rem;
   font-family: "Pretendard-Regular";
-  color:#fff;
-  text-align:left;
+  color: #fff;
+  text-align: left;
   display: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .buttonWrapper:hover .popup {
   display: block;
@@ -121,15 +136,15 @@ body {
   gap: 0 15px;
 }
 .popup h3 {
-  font-size:2rem;
-  padding:0;
+  font-size: 2rem;
+  padding: 0;
   line-height: 0;
 }
 .popup em {
   display: block;
   font-size: 1rem;
-  color:#f6f6f6;
-  padding-bottom:1rem;
+  color: #f6f6f6;
+  padding-bottom: 1rem;
 }
 .popup ul {
   list-style: none;
@@ -142,49 +157,73 @@ body {
 }
 .popup ul li:nth-child(odd) {
   display: inline-block;
-  width: 30px; height: 30px;
+  width: 30px;
+  height: 30px;
   line-height: 30px;
   text-align: center;
   background: #f6f6f6;
-  color:#333;
-  border-radius: 100px;;
+  color: #333;
+  border-radius: 100px;
 }
-.popup ul li p { font-size:1rem; }
-.popup ul li p b { color:#FF8C00; font-size:1.1rem; }
+.popup ul li p {
+  font-size: 1rem;
+}
+.popup ul li p b {
+  color: #ff8c00;
+  font-size: 1.1rem;
+}
 
-@media all and (max-width:1200px) {
- .typeJsWrapper {
-  width: 100%;
-  margin: 0 auto;
- }
- .logo { width:20%; }
- .typeJsWrapper { width:800px; }
- .typeJsWrapper .typeJsText {
+@media all and (max-width: 1200px) {
+  .typeJsWrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 20%;
+  }
+  .typeJsWrapper {
+    width: 800px;
+  }
+  .typeJsWrapper .typeJsText {
     font-size: 2rem;
     line-height: 1.4;
   }
- .card a {
-    width:50%;
-    height:40px;
-    line-height:40px;
-    font-size:1.3rem;
+  .card a {
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3rem;
   }
 }
 
-@media all and (max-width:768px) {
-  .buttonWrapper a { width:45%; }
-  .typeJsWrapper { width:700px; }
-  .typeJsWrapper .typeJsText { font-size: 1.6rem; }
-  .logo { width:20%; }
-  .popup h3 { font-size:1.4rem; }
+@media all and (max-width: 768px) {
+  .buttonWrapper a {
+    width: 45%;
+  }
+  .typeJsWrapper {
+    width: 700px;
+  }
+  .typeJsWrapper .typeJsText {
+    font-size: 1.6rem;
+  }
+  .logo {
+    width: 20%;
+  }
+  .popup h3 {
+    font-size: 1.4rem;
+  }
 }
 
-@media all and (max-width:500px) {
-  .typeJsWrapper { width:490px; }
-  .buttonWrapper a { width: 60%; }
+@media all and (max-width: 500px) {
+  .typeJsWrapper {
+    width: 490px;
+  }
+  .buttonWrapper a {
+    width: 60%;
+  }
   .card a {
-    height:30px;
-    line-height:30px;
-    font-size:1.2rem;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
   }
 }

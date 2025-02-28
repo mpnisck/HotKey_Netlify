@@ -103,7 +103,7 @@ function App() {
               <span>1</span>
             </li>
             <li>
-              <p>Spotlight 검색 <b>Command + Space</b> 을 열고<br/> <b>"터미널"</b>을 입력하여 실행해 보아요!</p>
+              <p>Spotlight 검색 <b>(Command + Space)</b> 을 열고<br/> <b>"터미널"</b>을 입력하여 실행해 보아요!</p>
             </li>
           </ul>
           <ul>

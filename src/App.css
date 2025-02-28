@@ -4,6 +4,11 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-style: normal;
+}
 body {
   background: #f6f6f6;
   margin: 0;
@@ -32,6 +37,21 @@ body {
 }
 .typeJsText {
   width: 100%; height: 100px;
+  position: relative;
+}
+.typeJsText::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 .buttonWrapper {
   width: 100%; height: auto;
@@ -55,12 +75,16 @@ body {
   color: #333;
   transition: all .3s;
 }
+.buttonWrapper a button { background:#333; }
 .buttonWrapper a:hover {
   background: #333;
   color: #FF8C00;
   letter-spacing: 1px;
 }
-.buttonWrapper a:hover .guide { background: #fff; color: #FF8C00; }
+.buttonWrapper a:hover .guide {
+  background: #fff;
+  color: #FF8C00;
+}
 .guide {
   position: absolute;
   right: 10px; top: 50%;
@@ -82,6 +106,7 @@ body {
   border-radius:20px;
   background:#333;
   padding:2rem;
+  font-family: 'Pretendard-Regular';
   color:#fff;
   text-align:left;
   display: none;
@@ -102,7 +127,7 @@ body {
 }
 .popup em {
   display: block;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color:#f6f6f6;
   padding-bottom:1rem;
 }
@@ -110,7 +135,7 @@ body {
   list-style: none;
   display: flex;
   flex-flow: nowrap;
-  align-items: center;
+  align-items: baseline;
   gap: 0 15px;
   padding: 0;
   margin: 0;
@@ -124,7 +149,8 @@ body {
   color:#333;
   border-radius: 100px;;
 }
-.popup ul li p b { color:#FF8C00; }
+.popup ul li p { font-size:1.2rem; }
+.popup ul li p b { color:#FF8C00; font-weight:800; }
 
 @media all and (max-width:1200px) {
  .typeJsWrapper {

@@ -34,7 +34,7 @@ function App() {
   }, [isTyping, counter, textToType]);
 
   const handleDownload = () => {
-    const copyText = "xattr -c /Applications/[...directory]/HotKey.app";
+    const copyText = "xattr -c /Applications/HotKey.app";
     navigator.clipboard.writeText(copyText).then(() => {
       setShowAlert(true);
 
@@ -52,7 +52,7 @@ function App() {
       </div>
       <div className="buttonWrapper">
         <a
-          href="https://github.com/mpnisck/HotKey/releases/download/hotkey/HotKey-1.0.0-arm64-mac.zip"
+          href="https://github.com/mpnisck/HotKey/releases/download/hotkey-v2/HotKey-1.0.0-arm64-mac.zip"
           download="HotKeyApp"
           onClick={handleDownload}
         >

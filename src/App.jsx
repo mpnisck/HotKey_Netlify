@@ -106,6 +106,17 @@ function App() {
             </li>
             <li>
               <p>
+                다운로드가 완료되었다면 <b>HotKey 앱을 응용 프로그램</b>으로
+                옮겨주세요!
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>2</span>
+            </li>
+            <li>
+              <p>
                 Spotlight 검색 <b>(Command + Space)</b> 을 열고
                 <br /> <b>"터미널"</b>을 입력하여 실행해 보아요! <br />
               </p>
@@ -113,7 +124,7 @@ function App() {
           </ul>
           <ul>
             <li>
-              <span>2</span>
+              <span>3</span>
             </li>
             <li>
               <p>
@@ -128,7 +139,7 @@ function App() {
           </ul>
           <ul>
             <li>
-              <span>3</span>
+              <span>4</span>
             </li>
             <li>
               <p>

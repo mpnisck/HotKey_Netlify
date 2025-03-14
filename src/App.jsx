@@ -107,7 +107,7 @@ function App() {
             <li>
               <p>
                 Spotlight 검색 <b>(Command + Space)</b> 을 열고
-                <br /> <b>"터미널"</b>을 입력하여 실행해 보아요!
+                <br /> <b>"터미널"</b>을 입력하여 실행해 보아요! <br />
               </p>
             </li>
           </ul>
@@ -121,7 +121,7 @@ function App() {
                 /Applications/HotKey.app
                 <br />
                 <b>
-                  Tip! 다운로드 버튼 클릭 후 상단의 팝업 차단 허용을 해 주세요!
+                  HotKey 앱 다운로드 버튼을 클릭하면 자동으로 명령어가 복사돼요!
                 </b>
               </p>
             </li>

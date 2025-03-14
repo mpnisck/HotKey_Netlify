@@ -118,7 +118,7 @@ function App() {
             <li>
               <p>
                 다음 명령어를 터미널에 <b>붙여넣기</b> : <br /> xattr -c
-                /Applications/[...directory]/HotKey.app
+                /Applications/HotKey.app
                 <br />
                 <b>
                   Tip! 다운로드 버튼 클릭 후 상단의 팝업 차단 허용을 해 주세요!

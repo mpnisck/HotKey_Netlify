@@ -8,7 +8,7 @@
 
 ## 1. 다운로드 링크
 
-- https://hotkey-v1.netlify.app/
+- https://hotkey-v2.netlify.app/
 
 ## 시스템 요구 사항
 

@@ -65,7 +65,10 @@ function App() {
       >
         <div>
           <img alt="hotkey_logo" class="logo" src="/hotkey.png" />
-          <h2>모바일에서는 HotKey를 사용할 수 없어요!</h2>
+          <h2>
+            모바일에서는 HotKey를
+            <br /> 사용할 수 없어요!
+          </h2>
           <p>PC 환경에서 다시 접속해 주세요 :&#41; </p>
         </div>
       </div>

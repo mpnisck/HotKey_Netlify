@@ -7,8 +7,18 @@ function App() {
   const [isTyping, setIsTyping] = useState(true);
   const [counter, setCounter] = useState(0);
   const [showAlert, setShowAlert] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const mobileCheck = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (mobileCheck) {
+      setIsMobile(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
     const typeJs = () => {
       if (isTyping) {
         if (counter < textToType.length) {
@@ -29,21 +39,38 @@ function App() {
     };
 
     const intervalId = setInterval(typeJs, 100);
-
     return () => clearInterval(intervalId);
-  }, [isTyping, counter, textToType]);
+  }, [isTyping, counter, textToType, isMobile]);
 
   const handleDownload = () => {
     const copyText = "xattr -c /Applications/HotKey.app";
     navigator.clipboard.writeText(copyText).then(() => {
       setShowAlert(true);
-
-      setTimeout(() => {
-        setShowAlert(false);
-      }, 3000);
+      setTimeout(() => setShowAlert(false), 3000);
     });
   };
 
+  if (isMobile) {
+    return (
+      <div
+        style={{
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          padding: "20px",
+          fontFamily: "sans-serif",
+        }}
+      >
+        <div>
+          <img alt="hotkey_logo" class="logo" src="/hotkey.png" />
+          <h2>모바일에서는 HotKey를 사용할 수 없어요!</h2>
+          <p>PC 환경에서 다시 접속해 주세요 :&#41; </p>
+        </div>
+      </div>
+    );
+  }
   return (
     <>
       <div className="typeJsWrapper">

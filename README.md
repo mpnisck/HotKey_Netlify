@@ -1,6 +1,6 @@
 <img src="https://github.com/user-attachments/assets/01631c07-fcb8-437c-b2e0-86bfaa7198cf" alt="hotkey" width="100" />
 
-# HotKey_Netlify
+# HotKey 다운로드 사이트
 
 여러분이 사용할 수 있는 HotKey 애플리케이션을 소개하게 되어 기쁘네요! <br>
 
